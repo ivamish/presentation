@@ -1,0 +1,33 @@
+.footer{
+    position: relative;
+    display: block;
+    max-height: 61px;
+    background-color: rgba($color: #000000, $alpha: 1.0);
+    margin-top: auto;
+
+    &__flex{
+        height: 100%;
+    }
+
+    &__ima{
+        height: 100%;
+        img{
+            display: block;
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    &__arrow{
+        position: absolute;
+        height: 100%;
+        right: 10%;
+        bottom: 77px;
+        animation: arrow 2s infinite;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        &:hover{
+            animation: arrow-scale 1s forwards;
+        }
+    }
+}

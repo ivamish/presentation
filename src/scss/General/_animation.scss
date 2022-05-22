@@ -1,0 +1,51 @@
+@keyframes arrow {
+    from {
+      transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(15px);
+    }
+  
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes arrow-scale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes left-arrow {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes right-arrow {
+  from {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,28 @@
+@import './vars.scss';
+@import './fonts.scss';
+@import './animation.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(../img/BG.png) center center/cover no-repeat;
+    background-position: 0% 104%;
+    overflow: hidden;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+.container{
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+};

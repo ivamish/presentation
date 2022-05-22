@@ -1,0 +1,49 @@
+@@include('./pages/head.html', {
+    "title" : "Главная"
+})
+<body>
+    <div class="wrap">
+        <div class="slide-status">
+            0<span id="currentSlide">1</span> / 0<span id="countSlide">4</span>
+        </div>
+
+        <div class="view">
+            <div class="container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      @@include('./pages/slide-1.html')
+                      @@include('./pages/slide-2.html')
+                      @@include('./pages/slide-3.html')
+                      ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__flex">
+                    <div class="footer__ima">
+                        <img src="img/download.gif" alt="mikhail">
+                    </div>
+                    <div id="nextSlide" class="footer__arrow arrow">
+                        <img src="@img/arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
