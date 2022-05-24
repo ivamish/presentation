@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 body {
@@ -104,6 +105,22 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes round-item {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes round-item {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }
 * {
@@ -405,6 +422,13 @@ body {
   position: relative;
 }
 .system__arrow {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170.69%;
+  text-align: center;
+  color: #FFFFFF;
   position: absolute;
   top: 0;
   left: 0;
@@ -438,19 +462,135 @@ body {
 .system__server {
   align-self: flex-start;
 }
+.system__server::before {
+  content: "Сервер";
+  display: block;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 170.69%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+.system__gaget::before {
+  content: "Клиент";
+  display: block;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 170.69%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+.system__bd::before {
+  content: "БД";
+  display: block;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 170.69%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
 .system__query {
   top: 50%;
   left: 18%;
+}
+.system__query span {
+  display: block;
+  position: absolute;
+  top: 0;
 }
 .system__tobd {
   top: 50%;
   left: 65%;
 }
+.system__tobd span {
+  display: block;
+  position: absolute;
+  top: 0;
+}
 .system__outbd {
   top: 67%;
   left: 53%;
 }
+.system__outbd span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
 .system__response {
   top: 71%;
   left: 28%;
+}
+.system__response span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.need {
+  padding-top: 131px;
+  padding-bottom: 250px;
+}
+.need__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 170.69%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.need__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 170.69%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.need__container {
+  width: 605px;
+  height: 308px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 131px;
+}
+.need__technologies {
+  width: 605px;
+  height: 308px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-animation: round 25s infinite;
+          animation: round 25s infinite;
+}
+.need__technologies-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.need__bd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.need__iten {
+  position: relative;
+}
+.need__iten img {
+  position: absolute;
+  -webkit-animation: round-item 25s infinite;
+          animation: round-item 25s infinite;
 }

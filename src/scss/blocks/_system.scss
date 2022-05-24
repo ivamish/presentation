@@ -2,6 +2,13 @@
     padding-top: 131px;
     position: relative;
     &__arrow{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 170.69%;
+        text-align: center;
+        color: #FFFFFF;
         position: absolute;
         top: 0;
         left: 0;
@@ -34,21 +41,84 @@
     }
     &__server{
         align-self: flex-start;
+        &::before{
+            content: 'Сервер';
+            display: block;
+            text-align: center;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 170.69%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+        }
+    }
+    &__gaget{
+        &::before{
+            content: 'Клиент';
+            display: block;
+            text-align: center;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 170.69%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+        }
+    }
+    &__bd{
+        &::before{
+            content: 'БД';
+            display: block;
+            text-align: center;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 170.69%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+        }
     }
     &__query{
         top: 50%;
         left: 18%;
+        span{
+            display: block;
+            position: absolute;
+            top: 0;
+        }
     }
     &__tobd{
         top: 50%;
         left: 65%;
+        span{
+            display: block;
+            position: absolute;
+            top: 0;
+        }
     }
     &__outbd{
         top: 67%;
-        left: 53%
+        left: 53%;
+        span{
+            display: block;
+            position: absolute;
+            bottom: 0;
+        }
     }
     &__response{
         top: 71%;
         left: 28%;
+        span{
+            display: block;
+            position: absolute;
+            bottom: 0;
+        }
     }
 }
